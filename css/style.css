@@ -115,6 +115,7 @@ section.herohome h1 {
     margin-bottom: 0px;
     font-size: 50px;
     color: #4B6E30;
+
 }
 
 section.herohome p {
@@ -133,28 +134,33 @@ section.herohome p {
 @media (max-width: 1517px) {
     section.herohome h1 {
         font-size: 30px;
+        max-width: 60%;
     }
     
     section.herohome p {
         font-size: 20px;
+        max-width: 60%;
     }
     
     .herohome img {
-        max-width: 450px;
+        max-width: 700px;
     }
 }
 
 @media (max-width: 1130px) {
     section.herohome h1 {
         font-size: 25px;
+        max-width: 70%;
+        margin-right: 0;
     }
     
     section.herohome p {
         font-size: 15px;
+        max-width: 70%;
     }
     
     .herohome img {
-        max-width: 450px;
+        max-width: 600px;
     }
 }
 
@@ -164,12 +170,12 @@ section.herohome p {
     }
     
     section.herohome p {
-        font-size: 10px;
+        font-size: 17px;
         margin-bottom: 20px;
     }
     
     .herohome img {
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
@@ -183,8 +189,14 @@ section.herohome p {
         margin-bottom: 0;
     }
     
+    section.herohome {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .herohome img {
-        display: none;
+        max-width: 100%;
+        border-radius: 0%;
     }
 }
 
@@ -580,6 +592,7 @@ section.elencoparchi a span {
     .grid3 {
         grid-template-columns: repeat(1, 5fr);
     }
+
 }
 
 @media (max-width: 560px) {
@@ -587,7 +600,8 @@ section.elencoparchi a span {
         padding-right: 50px;
         padding-left: 150px;
         text-align: left;
-       }
+    }
+
 }
 
 @media (max-width: 560px) {
@@ -595,7 +609,6 @@ section.elencoparchi a span {
         padding-left: 150px;
     }
 }
-
 
 
 
@@ -695,6 +708,7 @@ section.ffetna {
     margin-bottom: 80px;
     font-size: 24px;
     color: #4B6E30;
+    
 }
 
 .ffetna img {
@@ -784,41 +798,31 @@ section.interesse2 {
         font-size: 17px;
     }
 
-    section.interesse1 h5 {
-        font-size: 40px;
-        color: #785916;
-    }
-    
-    section.interesse1 p {
-        font-size: 17px;
-    }
-
-    section.interesse2 h5 {
-        font-size: 40px;
-        color: #785916;
-    }
-    
-    section.interesse2 p {
-        font-size: 17px;
+    section.ffetna img {
+        width: 660px;
     }
 }
 
 @media (max-width: 1154px) {
     .herohomeetna img {
-        width: 400px;
+        width: 550px;
     }
 
     section.herohomeetna h1 {
         font-size: 20px;
         color: #4B6E30;
     }
+
+    section.herohomeetna p {
+        font-size: 15px;
+    }
     
+    section.ffetna img {
+        width: 500px;
+    }
+
     section.ffetna p {
         font-size: 12px;
-    }
-      
-    .ffetna img {
-        width: 400px;
     }
 
     .ffetna h1 {
@@ -831,28 +835,164 @@ section.interesse2 {
     }
 }
 
+@media (max-width: 940px) {
+    
+    section.ffetna img {
+        width: 500px;
+    }
+
+    .ffetna h1 {
+        font-size: 15px;
+        color: #4B6E30;
+    }
+
+    .ffetna p {
+        font-size: 9px;
+    }
+
+}
+
+
 @media (max-width: 987px) {
     .herohomeetna img {
-        display: none;
+        width: 400px;
+    }
+    section.herohomeetna h1 {
+        font-size: 16px;
+        color: #4B6E30;
     }
 
-    .ffetna img {
-        display: none;
-    }
-
-}
-
-@media (max-width: 1144px) {
-    .interesse1 img {
-        display: none;
-    }
-
-    .interesse2 img {
-        display: none;
+    section.herohomeetna p {
+        font-size: 10px;
     }
 
 }
 
+@media (max-width: 758px) {
+    .herohomeetna img {
+        width: 300px;
+    }
+    section.herohomeetna h1 {
+        font-size: 14px;
+        color: #4B6E30;
+    }
+
+    section.herohomeetna p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 658px) {
+
+    .herohomeetna img {
+        width: 200px;
+    }
+
+    section.herohomeetna h1 {
+        font-size: 15px;
+        color: #4B6E30;
+    }
+
+    section.herohomeetna p {
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 608px) {
+    section.herohomeetna {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .herohomeetna img {
+        width: 550px;
+    }
+
+    section.herohomeetna h1 {
+        font-size: 25px;
+        color: #4B6E30;
+    }
+
+    section.herohomeetna p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 777px) {
+    section.ffetna {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.ffetna img {
+        width: 750px;
+    }
+
+    .ffetna p{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 870px) {
+    section.ffetna img{
+        max-width: 570px;
+    }
+}
+
+@media (max-width: 800px) {
+    .interesse1 {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .interesse1 h5{
+        font-size: 30px;
+    }
+
+    .interesse1 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1218px) {
+    .interesse1 h5{
+        font-size: 25px;
+    }
+
+    .interesse1 p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .interesse2 {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .interesse2 .valle2 h5{
+        font-size: 25px;
+    }
+
+    .interesse2 .valle2 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1218px) {
+
+    .interesse2 .valle2 h5{
+        font-size: 25px;
+    }
+
+    .interesse2 .valle2 p{
+        font-size: 13px;
+    }
+}
 
 
 
@@ -1037,8 +1177,8 @@ section.interesse2 {
 }
 
 @media (max-width: 1154px) {
-    .herohomevesuvio img {
-        width: 400px;
+    section.herohomevesuvio img {
+        width: 2100px;
     }
 
     section.herohomevesuvio h1 {
@@ -1064,23 +1204,93 @@ section.interesse2 {
     }
 }
 
-@media (max-width: 1187px) {
-    .herohomevesuvio img {
-        display: none;
+@media (max-width: 800px) {
+    .herohomevesuvio {
+        display: flex;
+        flex-direction: column; 
     }
 
-    .ffvesuvio img {
-        display: none;
+    section.herohomevesuvio img{
+        width: 900px;
     }
 
+    .herohomevesuvio h5{
+        font-size: 25px;
+    }
+
+    .herohomevesuvio p{
+        font-size: 13px;
+        max-width: 50%;
+    }
 }
 
-@media (max-width: 1144px) {
 
-    .interesse2 img {
-        display: none;
+
+@media (max-width: 800px) {
+    .ffvesuvio {
+        display: flex;
+        flex-direction: column; 
     }
 
+    .ffvesuvio h5{
+        font-size: 25px;
+    }
+
+    .ffvesuvio p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .ffvesuvio img{
+        width: 1900px;
+    }
+}
+
+@media (max-width: 800px) {
+    .interesse2 {
+        display: flex;
+        flex-direction: column-reverse;
+         
+    }
+
+    .interesse2 .vesuvio h5{
+        font-size: 25px;
+    }
+
+    .interesse2 .vesuvio p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1083px) {
+    .interesse2 .vesuvio h5{
+        font-size: 25px;
+    }
+
+    .interesse2 .vesuvio p{
+        font-size: 13px;
+    }
+    
+    section.interesse2 img {
+        width: 1900px;
+    }
+}
+
+@media (max-width: 1029px) {
+    .interesse2 .vesuvio h5{
+        font-size: 25px;
+    }
+
+    .interesse2 .vesuvio p{
+        font-size: 13px;
+    }
+    
+    section.interesse2 img {
+        width: 1400px;
+    }
 }
 
 
@@ -1256,7 +1466,7 @@ section.interessesila2 {
     }
       
     .ffsila img {
-        width: 400px;
+        width: 3000px;
     }
 
     .ffsila h1 {
@@ -1267,31 +1477,82 @@ section.interessesila2 {
     .ffsila p {
         font-size: 12px;
     }
+
+    section.interessesila1 h5{
+        font-size: 25px;
+    }
+
+    section.interessesila1 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+
+    section.interessesila2 h5{
+        font-size: 25px;
+    }
+
+    section.interessesila2 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
 }
 
-@media (max-width: 987px) {
-    .herohomesila img {
-        display: none;
+@media (max-width: 1027px) {
+    section.herohomesila h1{
+        font-size: 20px;
+    }
+
+    section.herohomesila p{
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .herohomesila {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.herohomesila p {
+        max-width: 50%;
+    }
+
+    .ffsila {
+        display: flex;
+        flex-direction: column;
     }
 
     .ffsila img {
-        display: none;
+        width: 800px;
     }
 
+    .ffsila p {
+        max-width: 50%;
+    }
+
+    .interessesila1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.interessesila2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.interessesila1 h5{
+        font-size: 25px;
+    }
+
+    section.interessesila1 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
 }
 
-@media (max-width: 1144px) {
-    .interessesila1 img {
-        display: none;
-    }
 
-    .interessesila2 img {
-        display: none;
-    }
-    
-
-
-}
 
 
 
@@ -1354,7 +1615,7 @@ section.interessetoscano1 {
 }
 
 .borghi h5 {
-    margin-top: 140px;
+    margin-top: 80px;
     margin-left: 100px; 
     margin-right: 80px;
     font-size: 30px;
@@ -1382,7 +1643,7 @@ section.interessetoscano2 {
 }
 
 .natura h5 {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 100px;
     margin-right: 90px;
     font-size: 30px;
@@ -1443,7 +1704,7 @@ section.interessetoscano2 {
 }
 
 @media (max-width: 1154px) {
-    .herohometoscano img {
+    ::selection.herohometoscano img {
         width: 400px;
     }
 
@@ -1456,8 +1717,8 @@ section.interessetoscano2 {
         font-size: 12px;
     }
       
-    .fftoscano img {
-        width: 400px;
+    section.fftoscano img {
+        width: 1800px;
     }
 
     .fftoscano h1 {
@@ -1470,27 +1731,94 @@ section.interessetoscano2 {
     }
 }
 
-@media (max-width: 1150px) {
-    .herohometoscano img {
-        display: none;
+@media (max-width: 950px) {
+    section.herohometoscano p {
+        font-size: 13px;
+    }
+
+    section.herohometoscano h1 {
+        font-size: 17px;
+    }
+}
+    
+
+@media (max-width: 800px) {
+    .herohometoscano {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.herohometoscano p {
+        max-width: 50%;
+    }
+
+    .fftoscano {
+        display: flex;
+        flex-direction: column;
     }
 
     .fftoscano img {
-        display: none;
+        width: 800px;
     }
 
+    .fftoscano p {
+        max-width: 50%;
+    }
+
+    .interessetoscano1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.interessetoscano2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.interessetoscano1 h5{
+        font-size: 25px;
+    }
+
+    section.interessetoscano1 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
+
+    section.interessetoscano2 h5{
+        font-size: 25px;
+    }
+
+    section.interessetoscano2 p{
+        font-size: 13px;
+        max-width: 50%;
+    }
 }
 
-@media (max-width: 1144px) {
-    .interessetoscano1 img {
-        display: none;
+@media (max-width: 1096px) {
+    section.interessetoscano1 h5{
+        font-size: 25px;
     }
 
-    .interessetoscano2 img {
-        display: none;
+    section.interessetoscano2 h5{
+        font-size: 25px;
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
